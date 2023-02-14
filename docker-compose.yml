@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  # gateway-manager-server:
+  #   container_name: gateway-manager-server
+  #   restart: on-failure
+  #   build:
+  #     context: .
+  #     args:
+  #       BUILD_PROFILE: development
+  #   ports:
+  #     - "9100:9100"
+  #   volumes:
+  #     - .:/app
+  #   links:
+  #     - gateway-manager-mongodb-service
+  gateway-manager-mongodb-service:
+    container_name: gateway-manager-mongodb-service
+    image: mongo
+    restart: on-failure
+    ports:
+    - "27017:27017"

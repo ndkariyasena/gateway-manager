@@ -1,0 +1,51 @@
+{
+  "name": "gateway-manager",
+  "version": "1.0.0",
+  "description": "Managing IOT gateway data using MongoDB database",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndkariyasena/gateway-manager.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "MongoDB",
+    "ExpressJs",
+    "Cache",
+    "Gateway",
+    "IOT"
+  ],
+  "author": "N D K Ariyasena <ndkariyasena@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndkariyasena/gateway-manager/issues"
+  },
+  "homepage": "https://github.com/ndkariyasena/gateway-manager#readme",
+  "dependencies": {
+    "@babel/eslint-parser": "7.19.1",
+    "body-parser": "1.20.1",
+    "cors": "2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "joi": "17.7.0",
+    "mongoose": "6.7.2",
+    "uuid": "9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.28.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-node": "4.1.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "nodemon": "2.0.20",
+    "prettier": "2.7.1"
+  },
+  "nodemonConfig": {
+    "ignore": ["**/cache_data/**"]
+  }
+}
