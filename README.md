@@ -13,13 +13,12 @@ Code challenge details are in the `Code_challenge.pdf` file.
   - `Type the command in the terminal 'npm start'`
 - `In the development environment, the server will start on port 9100`
 
+### Run with Docker ###
+- `Run 'docker-compose up'`
+
 ### Configurations ###
 
 - Database configurations in `./src/configs/database/mongodb.js`
-
-### Files ###
-
-- `.env` > for environment variables
 
 ### Docker ###
 
@@ -28,7 +27,7 @@ Code challenge details are in the `Code_challenge.pdf` file.
     - container name  = `gateway-manager-server`
     - port            = `9100`
   - MongoDB :
-    - container name  = `MongoDB-service`
+    - container name  = `gateway-manager-mongodb-service`
     - port            = `27017`
 
 ### Third-party libraries and usage ###
@@ -62,7 +61,7 @@ Code challenge details are in the `Code_challenge.pdf` file.
   * `validations`   - Request data validation
   * `server.js`     - Entry file
 * `.dockerignore`
-* `.env.*`
+* `.env.*`          - For environment variables
 * `.eslintrc.json`
 * `gitignore`
 * `.nvmrc`          - Nodejs version
