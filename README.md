@@ -11,7 +11,7 @@ Code challenge details are in the `Code_challenge.pdf` file.
 - `Run 'npm install' or 'npm i'` (within the directory)
 - `To start the project :`
   - `Type the command in the terminal 'npm start'`
-- `In the development environment, the server will start on port 5000`
+- `In the development environment, the server will start on port 9100`
 
 ### Configurations ###
 
@@ -26,7 +26,7 @@ Code challenge details are in the `Code_challenge.pdf` file.
 - Containers :
   - Nodejs server :
     - container name  = `gateway-manager-server`
-    - port            = `5000`
+    - port            = `9100`
   - MongoDB :
     - container name  = `MongoDB-service`
     - port            = `27017`
@@ -44,27 +44,28 @@ Code challenge details are in the `Code_challenge.pdf` file.
 
 * `babel-eslint`  - Linting utility
 * `eslint`        - Linting utility
-* `prettier`        - Linting utility
+* `prettier`      - Linting utility
 * `nodemon`       - Automatically restarting the node application when files changes
 
 #### Folder structure ####
 
-* `src`           - Source codes root directory
-  * `configs`     - Configuration files ( Database/Caching )
-    * `caching > cache_data` - Auto generate when caching starts
-  * `controllers` - Controller files
-  * `helpers`     - Helper functions
-  * `middleware`  - Middleware functions
-  * `modules`     - Database schemas & modules
-  * `routes`      - API routes layer
-  * `services`    - Services files
-  * `validations` - Request data validation
-  * `server.js`   - Entry file
+* `src`             - Source codes root directory
+  * `configs`       - Configuration files ( Database/Caching )
+    * `database`
+    * `constants.js`- Constant values
+  * `controllers`   - Controller files
+  * `helpers`       - Helper functions
+  * `middleware`    - Middleware functions
+  * `models`        - Database schemas & models
+  * `routes`        - API routes layer
+  * `services`      - Services files
+  * `validations`   - Request data validation
+  * `server.js`     - Entry file
 * `.dockerignore`
 * `.env.*`
 * `.eslintrc.json`
 * `gitignore`
-* `.nvmrc`        - Nodejs version
+* `.nvmrc`          - Nodejs version
 * `.prettierrc`
 * `docker-compose.yml`
 * `Dockerfile`
