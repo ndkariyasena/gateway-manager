@@ -2,7 +2,6 @@
 
 # README #
 This README document will provide steps to get this application up and running.
-Code challenge details are in the `Code_challenge.pdf` file.
 
 ### Basic steps ###
 - `Create .env file`
