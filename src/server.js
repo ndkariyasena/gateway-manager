@@ -27,7 +27,7 @@ app.use(
 app.use(bodyParser.json({ limit: JSON_PARSER_LIMIT, extended: true }));
 
 /* Routes define */
-app.use('/v1/gateways', gatewayRoutes);
+app.use('api/v1/gateways', gatewayRoutes);
 
 app.get('/', (req, res) => res.json({ api: `Welcome to the ${ApplicationName} service` }));
 
