@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from "express";
+import { Schema } from "joi";
 import { errorApiResponse } from "../helpers/api_responses";
 
 /**
@@ -7,7 +8,7 @@ import { errorApiResponse } from "../helpers/api_responses";
  * @param property string
  * @returns {function(...[*]=)}
  */
-const validator = (validationSchema, property) => {
+export const validator = (validationSchema: Schema, property: string) => {
   return (req: Request, res: Response, next: NextFunction) => {
     const { error } = validationSchema.validate(req[property], {
       abortEarly: false,
